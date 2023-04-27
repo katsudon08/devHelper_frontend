@@ -5,8 +5,6 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
-// import ConstructionIcon from '@mui/icons-material/Construction';
-// import BrushIcon from '@mui/icons-material/Brush';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import BorderColorIcon from '@mui/icons-material/BorderColor';
 import CloudSyncIcon from '@mui/icons-material/CloudSync';
