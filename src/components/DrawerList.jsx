@@ -18,8 +18,9 @@ export const DrawerList = ({ toggleDrawerHandler }) => {
     return (
         <List>
             {items.map((item, key) => (
-                <ListItem>
-                    <ListItemButton onClick={toggleDrawerHandler}>
+                <ListItem key={key}>
+                    {/* ここに、それぞれの画面への遷移関数を記述 */}
+                    <ListItemButton onClick={() => {console.log("clicked")}}>
                         <ListItemAvatar>
                             <Avatar sx={{ width: 35, height: 35 }} key={key}>
                                 {icons[key]}
