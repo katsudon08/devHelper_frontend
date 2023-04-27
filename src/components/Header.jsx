@@ -6,15 +6,17 @@ import { Typography } from '@mui/material';
 import { MenuButton } from './MenuButton';
 import { UserButton } from './UserButton';
 
-export const Header = () => {
+export const Header = ({ isNav = false, notHome = true }) => {
+    const title = 'アプリケーション名(仮)';
     return (
         <Box sx={{ flexGrow: 1, marginBottom: 1 }}>
             <AppBar position="static">
                 <Toolbar>
-                    <MenuButton />
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        アプリケーション名(仮)
-                    </Typography>
+                    {notHome && <MenuButton />}
+                    {isNav ? console.log("navigation") :
+                        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                            {notHome ? console.log("notHome") : title}
+                        </Typography>}
                     <UserButton />
                 </Toolbar>
             </AppBar>
