@@ -4,7 +4,7 @@ import { Header } from '../components/Header'
 export const Management = () => {
     return (
         <>
-            <Header isNav={true}/>
+            {/* <Header isNav={true}/> */}
             <div>Management</div>
         </>
     )

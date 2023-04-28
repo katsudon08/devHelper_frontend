@@ -4,7 +4,7 @@ import { Header } from '../components/Header'
 export const UI_UX = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div>UI_UX</div>
     </>
   )

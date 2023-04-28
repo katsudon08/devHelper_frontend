@@ -4,7 +4,7 @@ import { Header } from '../components/Header'
 export const Deployment = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <div>Deployment</div>
         </>
     )

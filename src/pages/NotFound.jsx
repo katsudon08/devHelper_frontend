@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const NoMatch = () => {
+export const NotFound = () => {
     return (
         <h2>このページは存在しておりません</h2>
     )

@@ -28,7 +28,7 @@ export const MenuButton = () => {
                 anchor='left'
                 open={open}
             >
-                <DrawerList toggleDrawerHandler={toggleDrawerHandler} />
+                <DrawerList toggleDrawerHandler={toggleDrawerHandler}/>
             </Drawer>
         </>
     )

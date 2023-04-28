@@ -10,17 +10,22 @@ import BorderColorIcon from '@mui/icons-material/BorderColor';
 import CloudSyncIcon from '@mui/icons-material/CloudSync';
 import BrowserUpdatedIcon from '@mui/icons-material/BrowserUpdated';
 import Avatar from '@mui/material/Avatar';
+import { useNavigate } from 'react-router-dom';
 
 export const DrawerList = ({ toggleDrawerHandler }) => {
     const icons = [<AssignmentIcon />, <BorderColorIcon />, <CloudSyncIcon />, <BrowserUpdatedIcon />];
-    const items = ['Management', 'UI/UX', 'Version', 'Deployment'];
+    const items = ['Management', 'UI_UX', 'Version', 'Deployment'];
+    const navigate = useNavigate();
 
     return (
         <List>
             {items.map((item, key) => (
                 <ListItem key={key}>
-                    {/* ここに、それぞれの画面への遷移関数を記述 */}
-                    <ListItemButton onClick={() => {console.log("clicked")}}>
+                    {/* 遷移先のuriがネストしてしまっている */}
+                    <ListItemButton onClick={() => {
+                        navigate(item);
+                        toggleDrawerHandler();
+                    }}>
                         <ListItemAvatar>
                             <Avatar sx={{ width: 35, height: 35 }} key={key}>
                                 {icons[key]}

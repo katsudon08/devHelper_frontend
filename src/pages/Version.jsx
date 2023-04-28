@@ -4,7 +4,7 @@ import { Header } from '../components/Header'
 export const Version = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <div>Version</div>
         </>
     )
