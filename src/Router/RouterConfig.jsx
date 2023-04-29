@@ -6,9 +6,7 @@ import { TopPage } from '../pages/TopPage';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 // ダイナミックインポート
-const Management = React.lazy(() => import('./../pages/Management'), [
-
-]);
+const Management = React.lazy(() => import('./../pages/Management'));
 const Deployment = React.lazy(() => import('./../pages/Deployment'));
 const UI_UX = React.lazy(() => import('./../pages/UI_UX'));
 const Version = React.lazy(() => import('./../pages/Version'));
