@@ -5,7 +5,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { ErrorBoundary } from 'react-error-boundary'
 import { ErrorFallBack } from '../components/error/ErrorFallBack'
 
-export const Project = () => {
+const Project = () => {
     const location = useLocation();
     return (
         <>
@@ -18,6 +18,7 @@ export const Project = () => {
                 {/* エラーバウンダリー */}
                 <ErrorBoundary FallbackComponent={ErrorFallBack}>
                     <React.Suspense fallback={<div>loading</div>}>
+                        {/* default exportを使用したコードでないと、エラーが発生する */}
                         <Outlet />
                     </React.Suspense>
                 </ErrorBoundary>
@@ -25,3 +26,5 @@ export const Project = () => {
         </>
     )
 }
+
+export default Project;

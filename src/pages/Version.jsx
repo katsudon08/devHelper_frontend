@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from '../components/Header'
 
-export const Version = () => {
+const Version = () => {
     return (
         <>
             {/* <Header /> */}
@@ -9,3 +9,5 @@ export const Version = () => {
         </>
     )
 }
+
+export default Version;

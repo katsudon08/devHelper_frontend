@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from '../components/Header'
 
-export const Management = () => {
+const Management = () => {
     return (
         <>
             {/* <Header isNav={true}/> */}
@@ -9,3 +9,5 @@ export const Management = () => {
         </>
     )
 }
+
+export default Management;

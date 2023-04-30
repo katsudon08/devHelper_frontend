@@ -5,7 +5,7 @@ import { Box } from '@mui/material';
 import { Header } from '../components/Header';
 import { useNavigate } from 'react-router-dom';
 
-export const Home = () => {
+const Home = () => {
     const navigate = useNavigate();
     return (
         <>
@@ -17,3 +17,5 @@ export const Home = () => {
         </>
     )
 }
+
+export default Home;

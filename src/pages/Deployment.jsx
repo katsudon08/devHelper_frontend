@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from '../components/Header'
 
-export const Deployment = () => {
+const Deployment = () => {
     return (
         <>
             {/* <Header /> */}
@@ -9,3 +9,5 @@ export const Deployment = () => {
         </>
     )
 }
+
+export default Deployment;

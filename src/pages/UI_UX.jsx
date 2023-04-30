@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from '../components/Header'
 
-export const UI_UX = () => {
+const UI_UX = () => {
   return (
     <>
       {/* <Header /> */}
@@ -9,3 +9,5 @@ export const UI_UX = () => {
     </>
   )
 }
+
+export default UI_UX;
