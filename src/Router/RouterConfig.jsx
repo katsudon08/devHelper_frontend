@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './../pages/Home';
 import NotFound from './../pages/NotFound';
-import { Project } from './../pages/Project';
+import Project from './../pages/Project';
 import TopPage from './../pages/TopPage';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
