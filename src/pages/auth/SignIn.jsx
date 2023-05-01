@@ -35,11 +35,7 @@ const SignIn = () => {
                         label='Password'
                     // idとnameのどちらか
                     />
-                    <Button
-                        fullWidth
-                        variant='contained'
-                        sx={{ mt: 5, mb: 3 }}
-                    >
+                    <Button fullWidth variant='contained' sx={{ mt: 5, mb: 3 }}>
                         sign in
                     </Button>
 
