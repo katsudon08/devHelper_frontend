@@ -9,14 +9,18 @@ import Avatar from '@mui/material/Avatar';
 import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
+import { useNavigate } from 'react-router-dom';
 
 export const UserButton = () => {
     const accounts = ['aiueo', 'kakikukeko', 'sasisuseso'];
     const icons = [<PersonAdd />, <Settings />, <Logout />];
     const settings = ['Add account', 'Settings', 'Logout'];
+    const settingPagesRoute = ['AddAccount', 'Settings', 'SignOut'];
 
     const [anchorELUser, setAnchorELUser] = React.useState(null);
     const open = Boolean(anchorELUser);
+
+    const navigate = useNavigate();
 
     const userClickHandler = (e) => {
         setAnchorELUser(e.currentTarget);
@@ -60,7 +64,12 @@ export const UserButton = () => {
                 ))}
                 <Divider />
                 {settings.map((element, key) => (
-                    <MenuItem key={key} onClick={userCloseHandler}>
+                    <MenuItem key={key}
+                        onClick={() => {
+                            navigate(settingPagesRoute[key]);
+                            userCloseHandler;
+                        }}
+                    >
                         {icons[key]}
                         <Typography textAlign="center" marginLeft={2}>
                             {element}
