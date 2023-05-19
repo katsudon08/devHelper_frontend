@@ -6,7 +6,7 @@ export const RouterConfig = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<TopPage />} />;
+                <Route index element={<TopPage />} />;
             </Routes>
         </BrowserRouter>
     )
