@@ -1,14 +1,9 @@
-import { AppBar, Toolbar } from '@mui/material'
+import { AppBar, Button, Toolbar, Container, IconButton, ThemeProvider } from '@mui/material'
+import AdbIcon from '@mui/icons-material/Adb';
 import React from 'react'
 
 export const Header = () => {
     return (
-        <AppBar position='static'>
-            <Container >
-                <Toolbar></Toolbar>
-            </Container>
-        </AppBar>
-
-        // 外形かいて、cssあてて、テーマかく
+        <></>
     )
 }
