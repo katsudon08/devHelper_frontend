@@ -15,12 +15,13 @@ function App() {
             },
             accentColor: {
                 // 落ち着いた緑
-                main: '#40BD5D',
+                // main: '#40BD5D',
                 // 青緑
                 // main: '#008080'
                 // 明るめの緑
-                main: '#90ee90'
-                // main: '#00ff7f'
+                // main: '#90ee90',
+                // 黄色
+                main: '#ffff1a'
             },
         }
     });
