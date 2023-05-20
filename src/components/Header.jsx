@@ -4,6 +4,7 @@ import React from 'react'
 export const Header = () => {
     const signInClickHandler = () => {console.log('signin')}
     const signUpClickHandler = () => {console.log('signup')}
+    const iconClickHandler = () => {console.log('iconClick')}
 
     return (
         // モダンなデザイン、あまり装飾を派手にしない
@@ -11,7 +12,7 @@ export const Header = () => {
         <AppBar position='static' color='mainColor'>
             <Toolbar >
                 <Container maxWidth='xl' sx={{ display: 'inline-flex' }}>
-                    <IconButton color='accentColor'>icon</IconButton>
+                    <IconButton color='accentColor' onClick={iconClickHandler}>icon</IconButton>
                     <Typography sx={{ flexGrow: 1 }} />
                     <Stack direction='row' spacing={2}>
                         <Button variant='contained' color='accentColor' sx={{ mr: 1, ml: 1 }} onClick={signInClickHandler}>サインイン</Button>
